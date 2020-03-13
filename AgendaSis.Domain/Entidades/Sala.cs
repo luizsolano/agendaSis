@@ -14,5 +14,12 @@
         public string Nome { get; protected set; }
         public int Capacidade { get; protected set; }
         public int Andar { get; protected set; }
+
+        public void ChangeValues(string nome, int capacidade, int andar)
+        {
+            Nome = nome;
+            Capacidade = capacidade;
+            Andar = andar;
+        }
     }
 }

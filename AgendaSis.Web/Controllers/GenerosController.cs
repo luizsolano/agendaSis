@@ -49,8 +49,9 @@ namespace AgendaSis.Web.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
+            await svc.DeleteAsync(id);
         }
     }
 }
